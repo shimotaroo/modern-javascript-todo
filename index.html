@@ -1,16 +1,41 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Modern JavaScript TODO</title>
+    <meta charset="UTF-8" />
+  </head>
 
-<head>
-	<title>Parcel Sandbox</title>
-	<meta charset="UTF-8" />
-</head>
-
-<body>
-	<div id="app"></div>
-
-	<script src="src/index.js">
-	</script>
-</body>
-
+  <body>
+    <div class="input-area">
+      <input placeholder="TODOを入力" />
+      <button>追加</button>
+    </div>
+    <div class="imcomplete-area">
+      <p class="title">未完了のTODO</p>
+      <ul>
+        <!-- ulタグの下にdivタグはバッドケース -->
+        <div class="list-row">
+          <li>TODOです</li>
+          <button>完了</button>
+          <button>削除</button>
+        </div>
+        <div class="list-row">
+          <li>TODOです</li>
+          <button>完了</button>
+          <button>削除</button>
+        </div>
+      </ul>
+    </div>
+    <div class="complete-area">
+      <p class="title">完了したTODO</p>
+      <ul>
+        <!-- ulタグの下にdivタグはバッドケース -->
+        <div class="list-row">
+          <li>TODOでした</li>
+          <button>戻す</button>
+        </div>
+      </ul>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
 </html>
